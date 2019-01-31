@@ -8,3 +8,7 @@ To run this API you need to type this command in your terminal:
 - npm start 
 
 
+To run the unit just type: 
+
+- npm run test --coverage
+you can check the detail of the test in this html file: coverage/calculatePossibilities.js.html 
