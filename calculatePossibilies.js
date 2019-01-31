@@ -1,6 +1,5 @@
 var calculatePossibilies = function (cell1,cell2, req, res) {
 
-    //var cell = req.query[0]+req.query[1];
     var possibleCoordinates = [];
     var finalCoordinates = [];
     var xCoordinates = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'];
@@ -20,7 +19,6 @@ var calculatePossibilies = function (cell1,cell2, req, res) {
     for (var i = 0; i < cellXpositions.length; i++) {
         for (var j = 0; j < cellYpositions.length; j++) {
             if (Math.abs(cellX - cellXpositions[i]) + Math.abs(cellY - cellYpositions[j]) === 3) {
-                //console.log('This is a valid coordinate: ', [cellXpositions[i], cellYpositions[j]]);
                 if (!possibleCoordinates.includes([cellXpositions[i], cellYpositions[j]])) {
                     possibleCoordinates.push([xCoordinates[cellXpositions[i]-1], cellYpositions[j]]);
                 } 

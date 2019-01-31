@@ -12,8 +12,6 @@ app.use(function (req, res, next) {
 app.use(calculatePossibilies);
 
 app.get('/get_move', (req, res) => {
-    console.log(req.query[0]);
-    console.log(req.query[1]);
     res.send(calculatePossibilies(req.query[0],req.query[1]));
 
 });
